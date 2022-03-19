@@ -29,7 +29,7 @@ The basic usage of serialtabs is pretty easy, just start using jQuery serialtabs
 <ul class="serialtabs-nav">
   <li data-serialtabs="#tabs-nav-1">Section 1</li>
   <li data-serialtabs="#tabs-nav-2">Section 2</li>
-  <li class="is-current" data-serialtabs="#tabs-nav-3">Section 3</li>
+  <li data-serialtabs="#tabs-nav-3" class="is-current">Section 3</li>
 </ul>
 <div id="tabs-nav-1">Section 1</div>
 <div id="tabs-nav-1">Section 2</div>
