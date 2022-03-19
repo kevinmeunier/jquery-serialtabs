@@ -16,7 +16,9 @@ jQuery serialtabs has been tested in: IE, Edge, Chrome (mobile included), Firefo
 [Download](https://github.com/kevinmeunier/jquery-serialtabs/archive/master.zip) and save one of two available files to include serialtabs to your page, either the [development](https://github.com/kevinmeunier/jquery-serialtabs/blob/main/dist/jquery.serialtabs.js) or the [minified](https://github.com/kevinmeunier/jquery-serialtabs/blob/main/dist/jquery.serialtabs.min.js) version. Also, you can visit the [project page](https://github.meunierkevin.com/jquery-serialtabs/) to copy what you need.
 ```HTML
 <script src="jquery.serialtabs.min.js"></script>
+<link href="jquery.serialtabs.css" rel="stylesheet">
 ```
+Due to the lightweight CSS code, it's recommended to copy/paste the CSS code into your general stylesheet.
 
 Make sure [jQuery](http://jquery.com) is properly loaded before using jQuery serialtabs. 
 
