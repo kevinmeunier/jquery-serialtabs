@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://github.meunierkevin.com/assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+<link href="https://github.meunierkevin.com/assets/css/site-all.css" rel="stylesheet">
+<script src="https://github.meunierkevin.com/assets/js/jquery.min.js"></script>
+<script src="https://github.meunierkevin.com/assets/js/site-all.js"></script>
+<title>jQuery serialtabs — Meunier Kévin</title>
+</head>
+<body>
+
+<script>writeHeader('serialtabs');</script>
+
+<div id="section-demonstration-html">
+  <ul class="serialtabs-nav">
+    <li><span class="sub-link-1" data-serialtabs="#tabs-nav-1">Section 1</span></li>
+    <li><span class="sub-link-1" data-serialtabs="#tabs-nav-2">Section 2</span></li>
+    <li><span class="sub-link-1 is-current" data-serialtabs="#tabs-nav-3">Section 3</span></li>
+    <li><span class="sub-link-1" data-serialtabs="#tabs-nav-4">Section 4</span></li>
+  </ul>
+  <div id="tabs-nav-1" class="serialtabs-nav-content">
+    <p>Nulla finibus nisl at ultricies laoreetegestas interdum dui eget pretium. Donec facilisis hendrerit felis, non ornare quam. Donec pulvinar mauris sed elit placerat, placerat pretium sapien aliquam. Etiam sollicitudin dictum cursus. Nunc tincidunt metus in eros sagittis suscipit.</p>
+  </div>
+  <div id="tabs-nav-2" class="serialtabs-nav-content">
+    <p>Fusce et pharetra miorbi viverra ultricies lectus, vel eleifend enim condimentum id. Phasellus elementum felis metus, sed dignissim mi commodo non. Vestibulum finibus tristique pulvinar. Fusce purus lacus, placerat sed risus commodo, bibendum rhoncus ante.</p>
+  </div>
+  <div id="tabs-nav-3" class="serialtabs-nav-content">
+    <p>Nulla finibus nisl at ultricies laoreet integer egestas interdum dui eget pretium. Donec facilisis hendrerit felis, non ornare quam. Donec pulvinar mauris sed elit placerat, placerat pretium sapien aliquam. Etiam sollicitudin dictum cursus. Nunc tincidunt metus in eros sagittis suscipit.</p>
+  </div>
+  <div id="tabs-nav-4" class="serialtabs-nav-content">
+    <p>Ultricies lectus vel eleifend enim condimentum id. Phasellus elementum felis metus, sed dignissim mi commodo non. Vestibulum finibus tristique pulvinar. Fusce purus lacus, placerat sed risus commodo, bibendum rhoncus ante.</p>
+  </div>
+</div>
+<div id="section-demonstration-js">
+  <script src="dist/jquery.serialtabs.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // jquery.serialtabs initialisation
+    $('.serialtabs-nav').serialtabs();
+  });
+  </script>
+</div>
+<div id="section-demonstration-css">
+  <style type="text/css">
+  /* JavaScript: serialtabs */
+  .serialtabs-nav{display:flex;justify-content:center;margin-bottom:60px;}
+  .serialtabs-nav .sub-link-1{display:block;padding:15px 25px;border:2px solid #2c2f2f;color:rgba(255, 255, 255, .8);cursor:pointer;font-size:13px;text-transform:uppercase;font-weight:400;transition:400ms;}
+  .serialtabs-nav .sub-link-1:hover{background-color:#2c2f2f;text-decoration:none;}
+  .serialtabs-nav .sub-link-1.is-current{background-color:#fff;cursor:default;color:#000;opacity:1;}
+  .serialtabs-nav[data-serialtabs-mode="tabs"] > li + li{margin-left:-2px;}
+  .serialtabs-nav[data-serialtabs-mode="accordion"]{display:block;}
+  .serialtabs-nav[data-serialtabs-mode="accordion"] > li + li{margin-top:-2px;}
+  .serialtabs-nav[data-serialtabs-mode="accordion"] .serialtabs-nav-content{padding:20px;border:2px solid #2c2f2f;border-top:0;}
+  </style>
+</div>
+
+<style type="text/css">
+/* Demo styles (to be deleted) */
+.serialtabs-nav-content{font-size:16px;}
+</style>
+
+<script>writeFooter('serialtabs');</script>
+
+</body>
+</html>
